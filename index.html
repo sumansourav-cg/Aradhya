@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Question For You Rani ❤️</title>
+  <!-- Google Fonts for romantic and clean aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Canvas for Floating Hearts & Sparkles -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Sound Toggle Button -->
+  <button id="soundToggle" class="sound-toggle" aria-label="Toggle Romantic Music">
+    <span id="soundIcon">🎵</span>
+    <span class="sound-text">Romantic Melody</span>
+  </button>
+
+  <main class="main-container">
+    <!-- Screen 1: The Question -->
+    <div class="card" id="questionCard">
+      <div class="card-glow"></div>
+      
+      <!-- Cute Animated Character / Sticker -->
+      <div class="character-container">
+        <img id="characterImg" src="https://media.tenor.com/efb3WjWn_vAAAAAj/cute-panda-hearts.gif" alt="Cute character asking" class="character-gif" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&auto=format&fit=crop&q=60'">
+      </div>
+
+      <div class="badge">A Question Straight From My Heart 💌</div>
+      
+      <h1 class="question-title">Will you go on a date with me? 🌹</h1>
+      <p class="subtitle" id="subMessage">Think carefully before you answer... 😉</p>
+
+      <div class="buttons-group" id="btnGroup">
+        <button id="yesBtn" class="btn btn-yes">
+          <span class="heart-pulse">💖</span> Yes, Absolutely!
+        </button>
+        <button id="noBtn" class="btn btn-no">
+          No 😢
+        </button>
+      </div>
+
+      <p class="hint-text" id="hintText">P.S. There is really only one right choice here! 🥰</p>
+    </div>
+
+    <!-- Screen 2: The Acceptance / Celebration -->
+    <div class="card hidden" id="successCard">
+      <div class="card-glow"></div>
+
+      <!-- Celebration Cute Character -->
+      <div class="character-container">
+        <img id="celebrateImg" src="https://media.tenor.com/gUiu1zyxfzYAAAAj/bear-kiss-bear-kisses.gif" alt="Happy couple celebrating" class="character-gif">
+      </div>
+
+      <div class="celebration-badge">Yayyyy! 🎉 Best Decision Ever! 💍</div>
+
+      <!-- Main response required by user -->
+      <h2 class="success-main-title">
+        "haaa haaa i knew you love me a lot chaloo milte hai date prrr jb bhagwan ji ka date apna fix krwa de😂😂😂"
+      </h2>
+
+      <!-- Special heartfelt note required by user -->
+      <div class="love-letter-box">
+        <div class="letter-stamp">💌 FROM MY HEART</div>
+        <p class="love-letter-content">
+          "made with lovee and it tooks moree than 2 weeks to build this website even when i was sick i solved the bugs , now you can understand how much valueable you are to meee lotss of love raniiiiiii"
+        </p>
+        <div class="signature">Forever & Always Yours ❤️✨</div>
+      </div>
+
+      <!-- Extra fun interactive options -->
+      <div class="success-actions">
+        <a id="whatsappShareBtn" href="#" target="_blank" class="btn btn-whatsapp">
+          📲 Send Screenshot / WhatsApp Me 💬
+        </a>
+        <button id="replayBtn" class="btn btn-replay">
+          🔄 Ask Me Again (Because it's cute)
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
